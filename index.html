@@ -4,25 +4,28 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content='width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=0' name='viewport' />
     <title>Testdrive</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet"> </head>
+    <link href="css/styles.css" rel="stylesheet">
+</head>
 
 <body>
     <section class="section">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 sc1"> <img id="sc1_cbs_logo" src="images/sc1/sc1_cbs_logo.svg" alt="sc1_cbs_logo"> <img id="sc1_car" src="images/sc1/sc1_car.png" alt="sc1_car"> <img id="sc1_bg" class="w100" src="images/sc1/sc1_car_bg_2.png" alt="sc1_car">
+                <div class="col-md-12 col-lg-8 sc1">
+                    <div class="sc1_cbs_logo_wrap"><img id="sc1_cbs_logo" src="images/sc1/sc1_cbs_logo.svg" alt="sc1_cbs_logo"></div> <img id="sc1_car" src="images/sc1/sc1_car.png" alt="sc1_car"> <img id="sc1_bg_m" class="w100" src="images/sc1/sc1_car_bg.png" alt="sc1_car"> <img id="sc1_bg"
+                        class="w100" src="images/sc1/sc1_car_bg_2.png" alt="sc1_car">
                     <div class="row sc1_r1">
                         <div class="col-md-12 z-100">
-                            <h4 class="white-text Roboto">Заведи свою карьеру. Будь первым!</h4>
+                            <h4 class="white_text Roboto">Заведи свою карьеру. Будь первым!</h4>
                             <p class="big_text white_text">ТЕСТ-ДРАЙВ
                                 <br> ПРОГРАММЫ
                                 <br> <span class="custom_blue_text"><b>MINI-MBA</b></span></p>
-                            <h4 class="lh_34px">—   Срок: 2 недели
+                            <h4 class="lh_34px white_text">—   Срок: 2 недели
                       <br>
                       —    Перезачет пройденных дисциплин
                       <br>
@@ -44,64 +47,358 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 text-center">
-                    <h3 class="Roboto fontw-400">Начать тест-драйв</h3>
-                    <h5>City Business School – единственная
+                <div id="sticky-wrap" class="fadefade col-md-12 col-lg-4 text-center">
+                    <div id="sticky" class="col-md-12 col-lg-4" style="font-size: 12px;">
+                        <p class="Roboto fontw-400 fontsize_30">Начать тест-драйв</p>
+                        <h5 class="fontw-300 lh_24px">City Business School – единственная
+                        <br>
 бизнес-школа, которая предоставляет такую
-исключительную возможность перед принятием решения о получении бизнес-образования!</h5>
-                    <h1><b>990 руб.</b></h1>
-                    <button type="button" class="btn btn-testdrive" name="button">Начать обучение</button>
+<br>
+исключительную возможность перед принятием
+                       <br>
+                        решения о получении бизнес-образования!</h5>
+                        <h1 style="margin-bottom: 20px;" class="Roboto"><b>990 руб.</b></h1>
+                        <button id="paybutton_1" type="button" class="btn btn_custom Roboto" name="button" data-toggle="modal" data-target="#pay" ><span style="    position: relative;
+    top: 3px;">Начать обучение</span><img class="button_icon" src="images/button_icon.svg" alt="button_icon"></button>
+                        <div class="tooltip fade top in" role="tooltip">
+                            <div class="tooltip-arrow"></div>
+                            <div class="tooltip-inner" style="margin: auto;">Ознакомьтесь с условиями</div>
+                        </div>
+                        <p class="fontsize_14" style="margin-top: 12px;">Это быстро и просто. Вы ничем не рискуете!</p>
+                        <span style="position: relative;
+    left: 18px;
+    top: 6px;
+    letter-spacing: -0.3px;">Я соглашаюсь с условиями</span> <a href="" class="text-left fontsize_12 lh_16px white_text" style="position: relative;
+    top: 6px;
+    left: 18px;
+    letter-spacing: -0.3px;">Договора-оферты</a> <span style="position: relative;
+    top: 6px;
+    left: 18px;
+    letter-spacing: -0.3px;">и</span>
+                        <br>
+                        <a href="" class="text-left fontsize_12 lh_16px white_text" style="position: relative;
+    top: -88px;
+    left: 25px;
+    letter-spacing: -0.3px;">Политики конфиденциальности</a>
+
+
+                        <input class="chkchk" type="checkbox" id="cbtest" onchange="document.getElementById('paybutton_1').disabled = !this.checked;" checked />
+                        <label for="cbtest" class="check-box"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-8 sc2">
+                    <h2 class="Roboto fontw-100 fontsize_34">О программе</h2>
+                    <p>MINI-MBA Professional – это интенсивная программа профессиональной
+                        <br> переподготовки в сфере менеджмента, самые важные знания и практики
+                        <br> из программы MBA.</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul style="padding-left: 14px;margin-top: -4px;">
+                                <li><span>Форма обучения: <strong>дистанционная</strong></span></li>
+                                <li><span>Срок обучения: <strong>6 месяцев</strong></span></li>
+                                <li><span><strong>7 модулей</strong></span></li>
+                                <li><span><strong>7 специализаций на выбор</strong></span></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 fontsize_16" style="position: relative;left: 12px;">
+                            <a href="" class="sc2_pdf_link custom_blue_text"><img id="sc2_pdf" src="images/sc2/sc2_pdf.svg" alt="sc2_pdf">Посмотреть программу<br> обучения</a> 2,3 МБ </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="fontsize_34 fontw-100">
+                                Вы получите 2 диплома:
+                            </h3></div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-md-3 col-xs-12 col-sm-6 text-center no-l-padding"> <img class="shadow-dip" src="images/sc2/sc2_dip1.png" alt="diploma1"> </div>
+                        <div class="col-md-3 col-xs-12 col-sm-6 text-center no-l-padding"> <img class="shadow-dip" src="images/sc2/sc2_dip2.png" alt="diploma2"> </div>
+                        <div class="col-md-3 col-xs-12 col-sm-6 text-center no-l-padding"> <img class="shadow-dip" src="images/sc2/sc2_dip3.png" alt="diploma3"> </div>
+                        <div class="col-md-3 col-xs-12 col-sm-6 text-center no-l-padding"> <img class="shadow-dip" src="images/sc2/sc2_dip4.png" alt="diploma4"> </div>
+                        <button type="button" class="btn btn_custom_2 Roboto" name="button" data-toggle="modal" data-target="#submit">Остатвить заявку</button>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4"></div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-8 sc3">
+                    <h2 class="Roboto fontw-100 fontsize_34">По истечении пробного периода</h2>
+                    <div class="row">
+                        <div class="col-md-12 custom_blue_text">
+                            <p>Если вы примете решение о поступлении:</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6"> <img class="sc3_checkbox" src="images/sc3/sc3_checkbox_blue.svg" alt="checkbox_blue">
+                            <p class="sc3_p_list"> Получите перезачет всех
+                                <br> пройденных дисциплин </p> <img class="sc3_checkbox" src="images/sc3/sc3_checkbox_blue.svg" alt="checkbox_blue">
+                            <p class="sc3_p_list"> Получите специальную скидку
+                                <br> 43% и вычет пробного периода.
+                                <br> Стоимость программы составит
+                                <br> 37 600 руб. вместо 68 000 руб. </p> <img class="sc3_checkbox" src="images/sc3/sc3_checkbox_blue.svg" alt="checkbox_blue">
+                            <p class="sc3_p_list"> Получите бессрочный доступ
+                                <br> к материалам программы
+                                <br> по завершении обучения </p>
+                        </div>
+                        <div class="col-sm-6 text-center"> <img class="sc3_img" src="images/sc3/sc3_tollcar.svg" alt="sc3_tollcar"></div>
+                    </div>
+                    <div id="sc3_r2" class="row">
+                        <div class="col-md-12 custom_blue_text">
+                            <p>Если вы не захотите продолжать обучение:</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6"> <img class="sc3_checkbox" src="images/sc3/sc3_checkbox_blue.svg" alt="checkbox_blue">
+                            <p class="sc3_p_list"> Вы получаете сертификат по любому
+                                <br> пройденному курсу </p> <img class="sc3_checkbox" src="images/sc3/sc3_checkbox_blue.svg" alt="checkbox_blue">
+                            <p class="sc3_p_list"> Получаете бесплатно записи 2-х
+                                <br> дневной конференции по управлению
+                                <br> карьерой с известными спикерами </p>
+                        </div>
+                        <div class="col-sm-6 text-center"> <img class="sc3_img_2" src="images/sc3/sc3_cert_in_arm.svg" alt="sc3_cert_in_arm"></div>
+                    </div>
+                  <div class="row text-center" style="    position: relative;top: -32px;">
+                        <div class="col-md-6">
+                            <button type="button" class="btn btn_custom_2 Roboto" name="button" style="margin-right: 76px;" data-target="#submit" data-toggle="modal">Остатвить заявку</button>
+                        </div>
+                        <div class="col-md-6">
+                            <button type="button" class="btn btn_custom_3 Roboto" name="button" style="margin-left: 43px;" data-target="#pay" data-toggle="modal">Оплатить пробный период</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4"></div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-8 sc4">
+                    <h2 class="Roboto fontw-100">Результат обучения</h2>
+                    <ul class="fontw-100 sc4_ul lh_23px">
+                        <li><span>Повысите свою личную эффективность и будете успевать в два раза больше </span></li>
+                        <li><span>Приобретете системный взгляд на управление бизнес-проектами<br>
+    и бизнес-процессами</span></li>
+                        <li><span>Получите новый взгляд на бизнес, обновите и структурируете знания и навыки <br>
+    по личному росту, стратегическому и операционному менеджменту, управлению  <br>
+    финансами, маркетингом и продажами, персоналом и проектами. </span></li>
+                        <li><span>Научитесь принимать эффективные решения, основанные на практическом <br>
+    опыте, полученном в процессе обучения</span></li>
+                        <li><span>Сможете решать множестворазличных бизнес-задач </span></li>
+                        <li><span>Увеличите число деловых контактов за счет социальной сети City Business School </span></li>
+                        <li><span>Сможете получить помощь по трудоустройству и рекомендательное письмо </span></li>
+                        <li><span>Найдете работу мечты или даже откроете свой бизнес </span></li>
+                        <li><span>Сможете получить налоговый вычет 13% от стоимости обучения в 2016 году</span></li>
+                    </ul>
+                    <div class="row text-center " style="    position: relative;
+    top: -7px;">
+                        <div class="col-sm-6">
+                            <button type="button" class=" z-100 btn btn_custom_2 Roboto" name="button" style="margin-right: 76px;" data-target="#submit" data-toggle="modal">Остатвить заявку</button>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="z-100 Roboto fontsize_16 fontw-600 text-left resume" style="margin-left: 150px;
+    margin-top: 24px;
+    line-height: 25px;">Ваше резюме станет
+                                <br> более востребованным
+                                <br>на рынке труда</p>
+                        </div></div>
+                </div>
+                <div class="col-md-12 col-lg-4"></div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-8 sc5">
+                    <h2 class="Roboto fontw-100 fontsize_34">Несколько слов о бизнес-школе</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>City Business School – бизнес-школа нового типа, сочетающая в себе элементы классического бизнес- образования и новейших технологий. </p>
+                            <p class="space"></p>
+                            <p> Наши программы ориентированы
+                                <br> на практику и возможность
+                                <br> мгновенного применения знаний для
+                                <br> профессионального и личного роста.</p>
+                        </div>
+                        <div class="col-md-6 text-center"><img id="sc5_babes" src="images/sc5/sc5_babes.png" alt="/sc5_babes"></div>
+                    </div>
+                    <div class="row" style="margin-top: 18px;">
+                        <div class="col-md-6 sc5_wrap_2"><a href="" class="custom_blue_text lh_25px">Лицензия на ведение образовательной
+деятельности № 035 328</a></div>
+                        <div class="col-md-6">
+                            <div class="sc5_wrap"> <img id="sc5_play_icon" src="images/sc5/sc5_play_icon.png" alt="sc5_play_icon"><a href="" class="custom_blue_text fontsize_22">Видеоролик о школе</a></div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 53px;">
+                        <div class="col-md-12 text-center"><img id="sc5_partners" src="images/sc5/sc5_partners.png" alt="sc5_partners.png"></div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4"></div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-8 sc6">
+                    <div class="card">
+                        <h1 class="Roboto fontw-400" style="font-size:48px">Начать тест-драйв</h1>
+                        <p>Начните обучение по программе MINI-MBA прямо
+                            <br>сейчас и лично убедитесь в качестве обучения!</p>
+                        <p class="Roboto" style="font-size:48px">
+                          <strong>990 руб.</strong>
+                        </p>
+                        <button id="sc6_button" type="button" class="btn btn_custom Roboto" name="button" data-toggle="modal" data-target="#pay">
+                          <span style="position: relative;
+    top: 3px;">Начать обучение</span>
+    <img class="button_icon" src="images/button_icon.svg" alt="button_icon">
+  </button>
+                        <div class="tooltip fade top in" role="tooltip">
+                            <div class="tooltip-arrow"></div>
+                            <div class="tooltip-inner">Ознакомьтесь с условиями</div>
+                        </div>
+
+                        <p class="fontsize_14 Roboto fontw-400" style="margin-top: -25px;
+    letter-spacing: 0.2px;
+    margin-left: 4px; margin-bottom: 31px;">Это быстро и просто. Вы ничем не рискуете!</p>
+                        <input class="chkchk" type="checkbox" id="cbtest2" onchange="document.getElementById('sc6_button').disabled = !this.checked;" checked />
+                        <label for="cbtest2" class="check-box" id="sc6_checkbox"></label>
+                        <div class="fontsize_12 lh_16px" style="position: relative;
+    top: -121px;
+    left: 33px;">Я соглашаюсь с условиями <a href="" class=" custom_blue_text">Договора-оферты</a>
+                            <br> и <a href="" class=" custom_blue_text">Политики конфиденциальности</a></div>
+                    </div>
+                    <div class="col-md-12 col-lg-12 text-center" style="margin-top: 52px;"> <a href="http://e-mba.ru/themes/emba/assets/images/docs-page/license-1.jpg" class="custom_blue_text">Лицензия на ведение образовательной деятельности № 035 328</a>
+                        <p class="fontsize_14">© City Business School</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 sc2">2</div>
-                <div class="col-md-3"></div>
+
+
+
+
+
+
+    <!--MODAL START !-->
+
+    <div class="modal fade-scale" id="pay" tabindex="-1" role="dialog" aria-labelledby="pay">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <a class="close" data-dismiss="modal" aria-label="Close"></a>
+                <form method="POST" action="/test-drive" class="form">
+                    <div class="form-title fontsize_24" style="margin: 33px 0px 0px;">Оплата пробного периода</div>
+                    <div class="price fontw-600">990 руб.</div>
+                    <div class="row Roboto">
+                        <div class="col-xxs-12 col-xs-4"><input type="text" name="User[fio]" value="" placeholder="Фамилия и имя" required=""></div>
+                        <div class="col-xxs-12 col-xs-4"><input type="tel" name="User[phone]" value="" placeholder="Телефон" required=""></div>
+                        <div class="col-xxs-12 col-xs-4"><input type="email" class="email" name="User[email]" value="" placeholder="E-mail" required=""></div>
+                        <div class="col-xxs-12"><button type="submit" class="z-100 btn btn_custom_2 Roboto btn_modal" data-toggle="modal" data-target="#pay_conf">Перейти к оплате</button></div>
+                    </div>
+                </form>
             </div>
         </div>
-    </section>
-    <section class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 sc3">2</div>
-                <div class="col-md-3"></div>
+    </div>
+
+    <div class="modal fade-scale" id="submit" tabindex="-1" role="dialog" aria-labelledby="submit">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <a class="close" data-dismiss="modal" aria-label="Close"></a>
+                <form method="POST" action="/test-drive" class="form">
+                    <div class="form-title fontsize_24" style="margin: 33px 0px 44px;">Узнать больше о пробном доступе</div>
+                    <div class="row Roboto">
+                        <div class="col-xxs-12 col-xs-12 col-sm-4"><input type="text" name="User[fio]" value="" placeholder="Фамилия и имя" required=""></div>
+                        <div class="col-xxs-12 col-xs-12 col-sm-4"><input type="tel" name="User[phone]" value="" placeholder="Телефон" required=""></div>
+                        <div class="col-xxs-12 col-xs-12 col-sm-4"><input type="email" class="email" name="User[email]" value="" placeholder="E-mail" required=""></div>
+                        <div class="col-xxs-12"><button type="submit" class="z-100 btn btn_custom_2 Roboto btn_modal" data-toggle="modal" data-target="#submit_conf">Оставить заявку</button></div>
+                    </div>
+                </form>
             </div>
         </div>
-    </section>
-    <section class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 sc4">2</div>
-                <div class="col-md-3"></div>
+    </div>
+
+    <div class="modal fade-scale" id="submit_conf" tabindex="-1" role="dialog" aria-labelledby="submit_conf">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <a class="close" data-dismiss="modal" aria-label="Close"></a>
+                <form method="POST" action="/test-drive" class="form">
+                    <div class="text-center">
+                        <div class="price fontw-600">
+                            Заявка принята!
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
-    </section>
-    <section class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 sc5">2</div>
-                <div class="col-md-3"></div>
+    </div>
+
+    <div class="modal fade-scale" id="pay_conf" tabindex="-1" role="dialog" aria-labelledby="pay_conf">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <a class="close" data-dismiss="modal" aria-label="Close"></a>
+                <form method="POST" action="/test-drive" class="form">
+                    <div class="text-center">
+                        <div class="price fontw-600">
+                            Пробный доступ оплачен!
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
-    </section>
-    <section class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 sc6">2</div>
-                <div class="col-md-3"></div>
-            </div>
-        </div>
-    </section>
+    </div>
+
+    <!--MODAL END !-->
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script>
-        $('a').on('click', function () {
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip()
+        });
+        $('a').on('click', function() {
             var target = $(this).attr('data-rel');
             $("#" + target).show().siblings("div").hide();
             $('a').removeClass('active arrow_box');
             $(this).addClass('active arrow_box');
+        });
+        $('.chkchk').click(function() {
+            if (this.checked) {
+                $('.tooltip').css({
+                    "opacity": "0",
+                    "pointer-events": "none"
+                });
+            } else {
+                $('.tooltip').css({
+                    "opacity": "1",
+                    "pointer-events": "all"
+                });
+            }
+        })
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 4000) {
+                $('.fadefade').css({
+                    "opacity": "0",
+                    "pointer-events": "none"
+                });
+            } else {
+                $('.fadefade').css({
+                    "opacity": "1",
+                    "pointer-events": "all"
+                });
+            }
         });
     </script>
 </body>
