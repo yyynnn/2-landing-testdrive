@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Testdrive</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet"> </head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 sc1"> <img id="sc1_cbs_logo" src="images/sc1/sc1_cbs_logo.svg" alt="sc1_cbs_logo"> <img id="sc1_car" src="images/sc1/sc1_car.png" alt="sc1_car"> <img id="sc1_bg" class="w100" src="images/sc1/sc1_car_bg_2.png" alt="sc1_car">
+                    <div class="row sc1_r1">
+                        <div class="col-md-12 z-100">
+                            <h4 class="white-text Roboto">Заведи свою карьеру. Будь первым!</h4>
+                            <p class="big_text white_text">ТЕСТ-ДРАЙВ
+                                <br> ПРОГРАММЫ
+                                <br> <span class="custom_blue_text"><b>MINI-MBA</b></span></p>
+                            <h4 class="lh_34px">—   Срок: 2 недели
+                      <br>
+                      —    Перезачет пройденных дисциплин
+                      <br>
+                      —    Бесплатный сертификат по любому
+                      <br>
+                      пройденному курсу
+                    </h4> </div>
+                    </div>
+                    <div class="row sc1_r2">
+                        <div class="col-md-5 text-center"><img id="sc1_carkeys" src="images/sc1/sc1_carkeys.svg" alt="sc1_carkeys"></div>
+                        <div class="col-md-7 darkgray_text text_align_change">
+                            <h2 class="Roboto fontw-100">Что такое тест-драйв?</h2>
+                            <p>Это 2 недели обучения на дистанционной
+                                <br> программе MINI-MBA всего за <strong>990 рублей!</strong>
+                                <br> Вы получаете полный доступ, который
+                                <br> поможет вам познакомиться с программой,
+                                <br> пройти несколько курсов и лично убедиться
+                                <br> - подходит ли вам данное обучение.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h3 class="Roboto fontw-400">Начать тест-драйв</h3>
+                    <h5>City Business School – единственная
+бизнес-школа, которая предоставляет такую
+исключительную возможность перед принятием решения о получении бизнес-образования!</h5>
+                    <h1><b>990 руб.</b></h1>
+                    <button type="button" class="btn btn-testdrive" name="button">Начать обучение</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 sc2">2</div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 sc3">2</div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 sc4">2</div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 sc5">2</div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 sc6">2</div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $('a').on('click', function () {
+            var target = $(this).attr('data-rel');
+            $("#" + target).show().siblings("div").hide();
+            $('a').removeClass('active arrow_box');
+            $(this).addClass('active arrow_box');
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,209 @@
+html, body {
+    font-family: 'Open Sans', 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+    color: #fff;
+    height: 5180px;
+    background: url("../images/bg_pattern.png")
+}
+
+body {
+    padding-top: 133px;
+    line-height: 1.8;
+    letter-spacing: -0.3px;
+}
+
+h2{
+  font-size: 32px;
+}
+
+h4{
+  font-weight: 300;
+}
+
+h5{
+  font-size: 16px;
+}
+
+p{
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 27px;
+}
+
+.OpenSans{
+    font-family: 'Open Sans'!important;
+}
+
+#ass{
+    background-color: RED;
+}
+
+.Roboto{
+    font-family: 'Roboto'!important;
+}
+
+.fontw-100{
+  font-weight: 100;
+}
+.fontw-300{
+  font-weight: 300;
+}
+.fontw-400{
+  font-weight: 400;
+}
+
+.w100{
+  width: 100%;
+}
+
+.section{
+  margin-bottom: 20px;
+
+}
+.sc1,.sc2,.sc3,.sc4,.sc5,.sc6{
+  border-radius: 10px;
+  background-color: #fff;
+  padding-bottom: 70px;
+}
+
+.sc1 {
+    background: -webkit-linear-gradient(top, rgba(14,24,39,1) 0%,rgba(255,255,255,1) 10%,rgb(255, 255, 255) 100%);
+    background: linear-gradient(to bottom, rgba(14,24,39,1) 0%,rgba(255,255,255,1) 10%,rgb(255, 255, 255) 100%);
+    background-size: initial;
+    background-repeat: no-repeat;
+}
+
+
+
+
+.sc1_r1{
+    padding: 63px 0 0 7px;
+}
+
+.sc1_r2{
+  padding-top: 125px;
+}
+
+
+.big_text{
+  font-family: 'Roboto', sans-serif!important;
+  font-size: 54px;
+  line-height: 64px;
+  text-shadow: 1px 1px 49px hsla(0, 0%, 100%, 0.21);
+  margin-top: 23px;
+  margin-bottom: 36px;
+  font-weight: 400;
+}
+
+.z-100{
+  z-index: 100;
+  position: relative;
+}
+
+.lh_34px{
+  line-height: 34px;
+}
+
+.btn-testdrive{
+  padding: 32px 23px 19px
+}
+
+#sc1_car{
+  position: absolute;
+  right: -57px;
+bottom: 721px;
+width: 479px;
+      z-index: 2;
+}
+
+#sc1_bg {
+  z-index: 0;
+  position: absolute;
+  right: 0;
+}
+
+#sc1_carkeys{
+  height: 293px;
+  margin-left: 44px;
+}
+
+#sc1_cbs_logo{
+  z-index: 4;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 250px;
+  margin: 40px;
+}
+
+/*colors*/
+.custom_blue_text {
+    color: #2F71D9;
+}
+
+.white_text {
+    color: #fff;
+}
+
+.custom_blue_bg {
+    background-color: #2F71D9;
+}
+
+.white_bg {
+    background-color: #fff;
+}
+
+.gold_bg {
+    background-color: #d6a761;
+}
+
+.gold_text {
+    color: #d6a761;
+}
+.darkgray_bg {
+    background-color: #333333;
+}
+
+.darkgray_text {
+    color: #333333;
+}
+/*colors*/
+
+@media (min-width: 992px){
+  #sc1_car{
+    position: absolute;
+    right: -48px;
+      bottom: 592px;
+      width: 421px;
+}
+.col-md-8 {
+    width: 68.3%;
+  }
+  #sc1_carkeys {
+    margin-left: 0px;
+}
+.col-md-4 {
+    width: 31.7%;
+}
+}
+
+
+
+
+@media (min-width: 1200px){
+  #sc1_car{
+    position: absolute;
+    right: -59px;
+    bottom: 457px;
+    width: 510px;
+}
+
+}
+
+
+@media (max-width: 992px){
+  .text_align_change{
+        text-align: center;
+  }
+}
